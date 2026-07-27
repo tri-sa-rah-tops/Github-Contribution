@@ -4,7 +4,7 @@
 **Contribution Number:** 1
 **Student:** Saarah
 **Issue:** https://github.com/alveusgg/alveusgg/issues/480
-**Status:** Phase IV - In Progress
+**Status:** Data Repo: Merged, Site Repo: Almost Merged (more info below) 
 ---
 
 ## Why I Chose This Issue
@@ -94,11 +94,32 @@ My proposed solution involves updating the repository to include these features,
 
 ### Unit Tests
 
-- Use testing features provided by the repo to ensure compliation, as well as compile on local machine to ensure sound clip properly plays as expected. 
+- Use testing features provided by the repo to ensure compliation, as well as compile on local machine to ensure sound clip properly plays as expected.
+- As for new tests, there were no specific ones added, since this did not adress fixing a bug. The previous tests for the site work as valid tests in the current state. 
 
 ### Code Changes
 
-- **Files modified:** Changes occured in multiple files, a full list of which can be viewed in the PR requests made. 
+- **Files modified:**
+    In Data Repository:
+      - src/ambassadors/sounds.ts
+      - src/assets/ambassadors/abbott/01.mp3
+      - src/assets/ambassadors/jalapeno/01.mp3
+      - src/assets/ambassadors/mia/01.mp3
+      - src/assets/ambassadors/serrano/01.mp3
+      - src/global.d.ts
+      - package.json
+      - tsdown.config.ts
+
+    In Alveus (Frontend) Repository:
+      - apps/website/src/pages/ambassadors/[ambassadorName].tsx
+      - apps/website/src/types/additional.d.ts
+      - apps/website/next.config.ts
+      - apps/website/package.json
+      - pnpm-lock.yaml
+  
+        
+
+
 - **Key commits:** Largest new portions include new UI feature, sound clips added, as well as supprot for strucutre of these clips. 
 - **Approach decisions:** This approach was made, as it followed along wtih the current data package in-place. This feature allows for the data to be used across all Alveus resources, not just on the site itself. 
 
@@ -111,9 +132,9 @@ My proposed solution involves updating the repository to include these features,
 **PR Description:** Final PRs included decriptions made above. Currently, I am waiting on a response for the maintainer, and for the PR to be merged. 
 
 **Maintainer Feedback:**
-- [Date]: Inital feedback suggest changes of the data structure, which were made in most recent comit. 
+- [07/26/2026]: Maintainer and I have been having consistent communication regarding the feature's, and I've been making changes as requested. The most recent-hang up has been regarding 
 
-**Status:** [Awaiting review]
+**Status:** Data Repo Merged, Wiating on Vercel Status for Site Repo 
 
 ---
 
@@ -121,20 +142,18 @@ My proposed solution involves updating the repository to include these features,
 
 ### Technical Skills Gained
 
-[What you learned technically]
+Technically, I gained a lot of insight into large-scale web applications. This included storing data in a data packge, and rendering it so that it works in the front-end smoothly. More specifically, I gained more inisght into usign JavaScript, TypeScript, and also collaberation on an open-source project. This is my first open-source contribution, and it has been a great learning process into how a PR is open, accepting feedback, implementing it, and fianlly having it merged! 
 
 ### Challenges Overcome
+There were a number of challenges faced in this process. The largest of these challenges included finding clean audio clips. Since many of the animals appear in online content, there are times where music is overlaid over the animal sounds. Thus, this was the most difficult and time consuming part of the process. 
 
-[What was hard and how you solved it]
+Other than this, I found it to be quite a learning curve adhering to the Open Source format of working. It feels like there is a large barrier to overcome (such as, a new vocabulary to learn, understnading a certain orginization's chosen method of handeling features, etc.) I believe that this will get eaier with time, and this process definilty was a great introduction to this! 
+
+
 
 ### What I'd Do Differently Next Time
 
-[Reflection on your process]
+If I had to do this again, I would spend more time getting familar with the codebase. I did an overlook of the codebase, however I now realize I could have gone much more in depth with the process. I would definilty do this next time, as I find it makes the process later more simplified. 
 
 ---
 
-## Resources Used
-
-- [Link to helpful documentation]
-- [Tutorial or Stack Overflow post that helped]
-- [GitHub issues or discussions that helped]
