@@ -5,6 +5,7 @@
 **Student:** Saarah
 **Issue:** https://github.com/alveusgg/alveusgg/issues/480
 **Status:** Data Repo: Merged, Site Repo: Almost Merged (more info below) 
+**Links:** [Data PR]([url](https://github.com/tri-sa-rah-tops/data/tree/main)), [Site PR]([url](https://github.com/tri-sa-rah-tops/Alveus-Sanctuary/tree/main))
 ---
 
 ## Why I Chose This Issue
