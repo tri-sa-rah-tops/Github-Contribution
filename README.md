@@ -9,7 +9,7 @@
 
 ## Why I Chose This Issue
 
-This issue would add an cool feature that engages users into the site's website. Furthermore, this feature would promote learning expereinces, and increase over knowledge about what the orginization does. 
+This issue would add an cool feature that engages users into the site's website. Furthermore, this feature would promote learning expereinces, and increase over knowledge about what the orginization does. Furthermore, this issue would align with my previous experience in Web Development, while allowing me to learn more about adding data files to a site and configuring them to work within the current site structure. Furthermore, this issue would allow me to sharpen previous skills I have in Web Development (including creating sites that have data passed from a backend) with newer skills (such as use of data packages, working within a larger scale, etc.). 
 
 ---
 
@@ -17,7 +17,7 @@ This issue would add an cool feature that engages users into the site's website.
 
 ### Problem Description
 
-This feature aims to include animal sounds into the site, making it more interactive and engaging. 
+This feature aims to include animal sounds into the site, making it more interactive and engaging. Because ALveus is a non-profit, a lot of their funding comes from user-interaction (be it through streaming, online videos, etc.). To faciliate this, having an operating site that is engaging and interactive will further promote the non-profit, and allow for a uniquer feeling when the site is visited by new traffic. Thus, inclusion of creative features (such as including animal noises) would benefit Alveus overall mission to promote Animal Conservation. I chose this because it fit within my previous skill expereince while also allowing me the opportunity to learn more about working with greater amounts of data in a web-app. 
 
 ### Expected Behavior
 
