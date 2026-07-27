@@ -37,23 +37,56 @@ This affects the user interface component, as well as may include inital storage
 
 ### Environment Setup
 
-Environment mostly working, with some minor troubles regarding connecting to database (that arestill in progress). 
+Environemnt Steup was as followed through the repository's instructions. To begin, I forked the [repository]([url](https://github.com/alveusgg/alveusgg)) to get the most up to date version. Then, I forked the [data repository]([url](https://github.com/alveusgg/data)) as well, as the feature I am implementing would invovle adding data files (sound clips of the animals) into the existing data structure. After that, I used the following tools as reccomended by the repository's guide for development: 
+
+
+1. Install nvm to find the correct node.js version, also can be viewed through the package.json file.
+2. Run corepack enable
+3. Register with GitHub Package Registery (needed to access the backend)
+4. Install necessary dependencies from lockfile
+5. Use docker to run database
+6. Set environement rules through generating secret keys
+7. Configure database using pnpm
+8. Start server using pnpm.
+
+
+Expected Behavior: Backend server and frontend server running in tandem, allowing for data to be read while using the webapp. 
+Actual Behavior: Web Application working as expected.
+
+
+I did have some issues regarding node versions, as I had incorrectly installed the wrong version of node. In doing this, there were some packages that came along that were not intended to be added to the repository. This was fixed in a later phase, as I upgraded node and removed the not-needed package called unrun. 
 
 ### Reproduction Evidence
 
 - **Commit showing reproduction:** https://github.com/saarah-m/Alveus-Sanctuary
+- **PLEASE NOTE: As this is an issue intednign to add a feautre, there is no strict "replication of bug" since there is no previously existing feature. My goal is to add in the feature that will adress the needs of the repository. 
 
 ---
 
 ## Solution Approach
 
 ### Analysis
-
-This feature is an idea that has not been implemented yet, so including it would invovle adding the frontend UI for the wesbite, finding data of animal noises from various Alveus public videos, as well as updating the data package to include these noises. 
+Using the UMPIRE Method: 
+- UNDERSTAND: The sound feature would add a great deal of interactivity and intrigue to the current site. Implementing this into the site also benefits Alveus' ultimate goal of animal conservation, as it allows for more knowledge about animals to be available and easily accessible to the average person.
+- MATCH: There are a plethora of other sites that use sound only snippets, such as the site [GetPodcast]([url](https://getpodcast.com/)) which allows for users to listen to podcasts. Similarly, the sound feature is aiming to be added here, where only a sound is played without playing a video (only playing a .mp3)
+- PLAN: Based on the current method of Alevus handeling data, I will attempt to add sound files to the data package. Then, on the front-end, these sound clips will be rendered in a sound player on each Ambassador's Page.
+- IMPLEMENT: A breakdown of implementation is included in the Proposed Solution section below.
+- REVIEW: This configuration can be ideal, however may cause issues with larger files. Will discuss this with maintainer and see further thoughts after short files are included in first implementation. 
 
 ### Proposed Solution
 
-My proposed solution involves updating the repository to include these features, as well as scour Alveus's videos to find usable clips. For now, I maintain a smaller goal of clips, and hope to build on this in the future once the intial PR has been accepted. 
+My proposed solution involves updating the repository to include these features, as well as scour Alveus's videos to find usable clips. For now, I maintain a smaller goal of clips, and hope to build on this in the future once the intial PR has been accepted. This will be done through the process mentioned above, while keeping communication with repository maintainer's incase of a change in needs, or a different desired approach. A breakdown of my current Proposed Solution Includes: 
+
+    1. Finding clean audio clip from the variaty of online clips Alveus has posted (including streams, YouTube Videos, Instagram Reels, TikTok Clips, etc.)
+    2. Adding them into the data package matching the current structure of the datapack, including:
+         - Declaring the .mp3 file extension in src/global.d.ts
+         - Adding audio clips into each Ambassador's folder, and naming them following the current naming convention (01.mp3, etc.) into assets/ambassadors/(AmbassadorName)
+         - In src/ambassadors/sounds.ts include a file called sounds.ts that renders and stores information regarding the sound clip (such as captions, importing, etc.)  
+    3. Creating a player in the frontend that makes them accessible to the user in apps/website/src/pages/ambassadors/[ambassadorName].tsx:
+         - Import Audio clips, and create a player that uses the soudn clip
+         - Also displays caption information
+    4. In apps/website/src/types/additional.d.ts declare the .mp3 file so that it can properly be interperted and In apps/website/next.config.ts, load file as url so that it can be properly interperted
+    5. Update data package to match newly included sounds. 
 
 ---
 
