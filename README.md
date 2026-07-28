@@ -4,7 +4,7 @@
 **Contribution Number:** 1
 **Student:** Saarah
 **Issue:** https://github.com/alveusgg/alveusgg/issues/480
-**Status:** Data Repo: Merged, Site Repo: Almost Merged (more info below) 
+**Status:** Data Repo: Merged, Site Repo: Merged! 
 
 
 ---
@@ -23,15 +23,15 @@ This feature aims to include animal sounds into the site, making it more interac
 
 ### Expected Behavior
 
-Where an animal is included, there will be an option to learn about the animal and a chacne to hear their animal sounds. 
+Where an animal sound snippet is found, there will be an option to learn about the animal and a chance to hear their animal sounds. This feature will be displayed on each individual ambassador's page, given that a clean audio snippet can be found of them. 
 
 ### Current Behavior
 
-This feature is not currently implemented. 
+This feature is not currently implemented, and this contribution is aimed to include this feature. The site offers other information about the ambassadors, but does not allow for users to hear their sounds. 
 
 ### Affected Components
 
-This affects the user interface component, as well as may include inital storage needed on backend. 
+This affects the user interface component, as well as may include the need for initial storage needed on backend, depending on how many clips are added. Given this, it should not raise too much of a concern, given that there is a multitude of other elements in the data package. 
 
 ---
 
@@ -39,7 +39,7 @@ This affects the user interface component, as well as may include inital storage
 
 ### Environment Setup
 
-Environemnt Steup was as followed through the repository's instructions. To begin, I forked the [repository]([url](https://github.com/alveusgg/alveusgg)) to get the most up to date version. Then, I forked the [data repository]([url](https://github.com/alveusgg/data)) as well, as the feature I am implementing would invovle adding data files (sound clips of the animals) into the existing data structure. After that, I used the following tools as reccomended by the repository's guide for development: 
+Environment Setup was as followed through the repository's instructions. To begin, I forked the [repository]([url]([https://github.com/alveusgg/alveusgg](https://github.com/tri-sa-rah-tops/Alveus-Sanctuary))) to get the most up to date version. Then, I forked the [data repository]([url]([https://github.com/alveusgg/data](https://github.com/tri-sa-rah-tops/data))) as well, as the feature I am implementing would involve adding data files (sound clips of the animals) into the existing data structure. After that, I used the following tools as recommended by the repository's guide for development: 
 
 
 1. Install nvm to find the correct node.js version, also can be viewed through the package.json file.
@@ -52,7 +52,7 @@ Environemnt Steup was as followed through the repository's instructions. To begi
 8. Start server using pnpm.
 
 
-Expected Behavior: Backend server and frontend server running in tandem, allowing for data to be read while using the webapp. 
+Expected Behavior: Backend server and frontend server running in tandem, allowing for data to be read while using the web-app. 
 Actual Behavior: Web Application working as expected.
 
 
@@ -61,7 +61,7 @@ I did have some issues regarding node versions, as I had incorrectly installed t
 ### Reproduction Evidence
 
 - **Commit showing reproduction:** https://github.com/saarah-m/Alveus-Sanctuary
-- **PLEASE NOTE: As this is an issue intednign to add a feautre, there is no strict "replication of bug" since there is no previously existing feature. My goal is to add in the feature that will adress the needs of the repository. 
+- **PLEASE NOTE: As this is an issue indenting to add a feature, there is no strict "replication of bug" since there is no previously existing feature. My goal is to add in the feature that will address the needs of the repository. 
 
 ---
 
